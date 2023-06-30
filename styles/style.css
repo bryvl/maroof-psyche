@@ -10,12 +10,6 @@
     --mobile-nav-height: 96px;
 }
 
-/* Browser Behavior Overwrite */
-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
 /* Change Autocomplete styles in Chrome*/
 .contact-form input:-webkit-autofill,
 .contact-form input:-webkit-autofill:hover, 
