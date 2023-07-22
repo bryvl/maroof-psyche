@@ -31,9 +31,6 @@ html, body {
 /* .container {
   padding-left: 0px;
 }*/
-.row {
-  /* background-color: #f8f9fa; */
-}
 
 .navbar-toggler:focus {
     box-shadow: unset;
@@ -592,13 +589,19 @@ i.acap-about--icon {
 .card-link {
   text-align: center;
 }
+.card-link a  {
+  color: #ffffffff;
+}
+.card-link a:hover {
+  color: #ffffffcc;
+}
 .see-staff a {
-  color:#ffffff;
+  color:#ffffffff;
   font-size: 1.25em;
   cursor: pointer;
 }
 .see-staff a:hover {
-  color: #1c021d;
+  color: #ffffffcc;
 }
 
 /*************** Form Row ***************/
@@ -614,6 +617,9 @@ i.acap-about--icon {
   max-width: 450px;
   border-radius: 5px;
   background-color: var(--main-accent-hvr);
+  box-shadow: 1px 3px 10px #333;
+  -webkit-box-shadow: 1px 3px 10px #333;
+  -moz-box-shadow: 1px 3px 10px #333;
 }
 .form-header {
   padding: 24px;
@@ -631,13 +637,17 @@ i.acap-about--icon {
 /*************************************/
 
 .footer {
-  padding: 40px 0;
+  padding: 36px 12px;
   background-color: #1c021d;
-  color: #f8f9fa;
+  color: #e6eaed;
+}
+
+.footer-about p {
+  color: #aaa;
 }
 
 .footer h5 {
-    color: #333;
+  color: #f8f9fa;
 }
 
 .footer ul {
@@ -649,13 +659,13 @@ i.acap-about--icon {
     margin-bottom: 10px;
 }
 
-.footer ul li a {
-    color: #666;
+.footer a {
+    color: var(--main-accent);
     text-decoration: none;
 }
 
-.footer ul li a:hover {
-    color: #333;
+.footer a:hover {
+    color: var(--main-accent-hvr);
 }
 
 .footer hr {
@@ -665,10 +675,14 @@ i.acap-about--icon {
 
 .footer p.text-center {
     margin-top: 20px;
-    color: #666;
+    color: #aaa;
 }
-
-
+.footer-contact li {
+  color: #aaa;
+}
+.redhusky-link {
+  font-size: 1.5em;
+}
 
 /*************** Animations ***************/
 /******************************************/
@@ -837,9 +851,7 @@ i.acap-about--icon {
     .acap-about--traits .col-4 h4 {
       font-size: 1em;
     }
-    #conditions {
-      /* padding: 24px; */
-    }
+    
     .conditions-item {
       margin: 12px auto;
     }
