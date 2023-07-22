@@ -1,13 +1,17 @@
 /* Root */
 :root {
     --main-accent: #5B3D5C;
-    --main-accent-rgba: rgba(91, 61, 92, .75);
     --main-accent-hvr: #4c2b4d;
     --secondary-accent: #0b314b;
     
     /* Nav height (height + padding) */
     --desktop-nav-height: 170px;
     --mobile-nav-height: 96px;
+}
+
+html, body {
+  font-family: Utopia Std,sans-serif;
+  /* max-width: initial; */
 }
 
 /* Change Autocomplete styles in Chrome*/
@@ -26,10 +30,10 @@
 } */
 /* .container {
   padding-left: 0px;
-}
+}*/
 .row {
-  margin-right: 0px;
-} */
+  /* background-color: #f8f9fa; */
+}
 
 .navbar-toggler:focus {
     box-shadow: unset;
@@ -49,8 +53,8 @@ header {
     padding: 0px;
     transition: .15s padding ease-in;
 }
-.navbar.scrolled {
-    box-shadow: 1px, 1px, 5px, #333;
+.sticky-top:has(.nav-container.scrolled) {
+    box-shadow: 1px 1px 5px #333;
     /* padding-top: 12px; */
 }
 .nav-container {
@@ -154,23 +158,23 @@ header .nav-link:focus {
     bottom: 64px;
 }
 
-.hero--cta-btn.btn {
+.cta-btn.btn {
     margin-top: 24px;
     padding: 16px 32px;
-    background-color: var(--main-accent-rgba);
+    background-color: var(--main-accent);
     color: #fff;
-    border: 2px solid var(--main-accent-rgba);
-    border-radius: 2px;
+    border: 2px solid var(--main-accent);
+    border-radius: 5px;
     transition: 
         .25s border-color ease-in-out,
         .25s color ease-in-out,
         .25s background-color ease-in-out;
 }
-.hero--cta-btn.btn:hover,
-.hero--cta-btn.btn:active,
-.hero--cta-btn.btn:focus  {
-    background-color: var(--main-accent);
-    border-color: var(--main-accent);
+.cta-btn.btn:hover,
+.cta-btn.btn:active,
+.cta-btn.btn:focus  {
+    background-color: var(--main-accent-hvr);
+    border-color: var(--main-accent-hvr);
 }
 
 /*************** Modal ***************/
@@ -277,7 +281,7 @@ header .nav-link:focus {
     background-color: #6c4a6d;
     color: #fff;
     border: 2px solid transparent;
-    border-radius: unset;
+    border-radius: 5px;
     transition: .3s all ease-in-out;
 }
 .contact-form--submit:hover,
@@ -364,28 +368,53 @@ i.acap-about--icon {
 /*************** Conditions ***************/
 /*****************************************/
 #conditions {
-    padding: 50px;
+    padding: 96px 48px;
     background-color: rgb(165, 150, 173);
     color: #fff;
   }
   
 
 #conditions h1 {
-    padding: 36px 0;
+    padding: 24px 0;
+    margin-bottom: 48px;
 }
   .conditions-item {
     position: relative;
+    margin: 12px;
+    transform: scale(1);
+    box-shadow: none;
+    transition: .35s transform ease-in-out;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #333;
+    overflow: hidden;
+  }
+  .conditions-item:hover {
+    transform: scale(1.025);
+    box-shadow: 1px 3px 10px #333;
+    cursor: pointer;
+  }
+
+  .conditions-custom-border {
+    margin-top: 24px;
+    width: 0px;
+    height: 5px;
+    background-color: #4c2b4d;
+    transition: .3s all ease-in;
+  }
+
+  .conditions-item:hover + .conditions-custom-border {
+    width: 100%;
   }
   
   .image-wrapper {
     position: relative;
+    border-radius: 5px;
     overflow: hidden;
   }
   
   .image-wrapper img {
-    width: 100%;
+    max-width: 100%;
     vertical-align: middle;
-    height: 325px;
   }
   
   .overlay {
@@ -394,7 +423,7 @@ i.acap-about--icon {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .75);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -427,7 +456,7 @@ i.acap-about--icon {
   }
   
   .overlay-content a:hover {
-    background-color: #000;
+    background-color: var(--main-accent);
     color: #fff;
   }
   
@@ -467,6 +496,10 @@ i.acap-about--icon {
     background-color: #fff; /* Adjust the color as needed */
   }
   
+  #secondary-cta {
+    text-align: center;
+  }
+
   @media (max-width: 767px) {
     .carousel-inner .carousel-item {
       flex-wrap: wrap;
@@ -475,12 +508,132 @@ i.acap-about--icon {
   }
 
 
+/*************** Staff Row ***************/
+/****************************************/
+
+#staff-row .col-sm-6:first-child{
+  padding: 48px;
+  display: flex;
+}
+#staff-row.row {
+  background-color: var(--main-accent-hvr);
+  color: #ffffff;
+}
+
+.staff-row-header.row {
+  align-content: center;
+}
+
+.col-sm-6:has(.staff-header--img-wrapper) {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.staff-row-header.row .btn {
+  background-color:#6C4A6D;
+  border-color: transparent;
+}
+.staff-row-header.row .btn:hover {
+  background-color: #1c021d;
+  border-color: transparent;
+}
+
+/* Build Sm or Md medium query to stack photo on top of staff button */
+
+
+
+.staff-header--staff-cards.row {
+  padding: 60px 30px;
+  background-color: var(--main-accent);
+}
+.staff-card {
+  padding: 12px;
+}
+.staff-card .card {
+  min-height: 600px;
+  border: 1px transparent solid;
+  border-radius: 5px;
+  background-color: #583759;
+  color: #ffffff;
+}
+.staff-card * {
+  border-radius: 5px;
+}
+.card-body {
+  padding: 0px;
+}
+.staff-card .card-avatar {
+  padding: 12px 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: #1c021d;
+  font-size: 5em;
+}
+.card-content {
+  padding: 18px;
+}
+.card-title {
+  min-height: 85px;
+  padding: 12px 6px;
+  background-color: var(--main-accent-hvr);
+}
+.card-subtitle {
+  padding: 6px;
+  margin-top: 12px;
+  background-color: var(--main-accent-hvr);
+}
+.card-text {
+  height: 250px;
+  padding: 12px;
+  margin-top: 12px;
+  background-color: var(--main-accent-hvr);
+  overflow: scroll;
+}
+.card-link {
+  text-align: center;
+}
+.see-staff a {
+  color:#ffffff;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+.see-staff a:hover {
+  color: #1c021d;
+}
+
+/*************** Form Row ***************/
+/****************************************/
+
+.contact-form-row {
+  background-color: #f8f9fa;
+  padding: 48px 12px;
+}
+#pageContactForm {
+  padding: 24px 48px;
+  margin: 12px auto;
+  max-width: 450px;
+  border-radius: 5px;
+  background-color: var(--main-accent-hvr);
+}
+.form-header {
+  padding: 24px;
+  /* background-color: var(--main-accent); */
+  color: #ffffff;
+}
+.form-group--message {
+  color: #ffffff;
+}
+.form-footer {
+  text-align: center;
+}
+
 /*************** Footer ***************/
 /*************************************/
 
 .footer {
-  background-color: #f8f9fa;
   padding: 40px 0;
+  background-color: #1c021d;
+  color: #f8f9fa;
 }
 
 .footer h5 {
@@ -685,10 +838,10 @@ i.acap-about--icon {
       font-size: 1em;
     }
     #conditions {
-      padding: 24px;
+      /* padding: 24px; */
     }
     .conditions-item {
-      margin: 24px auto;
+      margin: 12px auto;
     }
   }
   
