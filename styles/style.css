@@ -524,50 +524,50 @@ i.acap-about--icon {
   padding: 60px 30px;
   background-color: var(--main-accent);
 }
-.staff-card {
+#homepage .staff-card {
   padding: 12px;
 }
-.staff-card .card {
+#homepage .staff-card .card {
   min-height: 600px;
   border: 1px transparent solid;
   border-radius: 5px;
   background-color: #583759;
   color: #ffffff;
 }
-.staff-card * {
+#homepage  .staff-card * {
   border-radius: 5px;
 }
-.card-body {
+#homepage .card-body {
   padding: 0px;
 }
-.staff-card .card-avatar {
+#homepage .staff-card .card-avatar {
   padding: 12px 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: #1c021d;
   font-size: 5em;
 }
-.card-content {
+#homepage .card-content {
   padding: 18px;
 }
-.card-title {
+#homepage .card-title {
   min-height: 85px;
   padding: 12px 6px;
   background-color: var(--main-accent-hvr);
 }
-.card-subtitle {
+#homepage .card-subtitle {
   padding: 6px;
   margin-top: 12px;
   background-color: var(--main-accent-hvr);
 }
-.card-text {
+#homepage .card-text {
   height: 250px;
   padding: 12px;
   margin-top: 12px;
   background-color: var(--main-accent-hvr);
   overflow: scroll;
 }
-.card-link {
+#homepage .card-link {
   text-align: center;
 }
 .card-link a  {
