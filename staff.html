@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to Raleigh's trusted Psychiatry Clinic - Adolescent, Child & Adult Psychiatry. We provide comprehensive care for all ages, treating the whole person. Experience transformative and compassionate care with us.">
+      <title>Child, Adolescent, Adult Psychiatry</title>
+      <!-- Bootstrap CSS (v5) -->
+      <link 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+          crossorigin="anonymous">
+      <!-- jQuery (v3) -->
+      <script 
+          src="https://code.jquery.com/jquery-3.6.4.min.js"
+          integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+          crossorigin="anonymous">
+      </script>
+      <!-- Bootstrap JS (v5) -->
+      <script `
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+          crossorigin="anonymous">
+      </script>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+
+      <!-- Flat Icon -->
+      <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+      <!-- AOS Styles -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      
+      <!-- Input Masking -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <div id="staffpage" class="container-fluid">
+      <header id="header" class="sticky-top row">
+          <nav class="navbar navbar-expand-lg">
+              <div class="nav-container container">
+              <a class="navbar-brand" href="#">
+                  <img src="./assets/images/drm-logo-demo-resized.png" alt="Adult, Child, and Adolescent Psychiatry Logo" class="img-fluid logo"><span>Dr. Maroof</span>
+              </a>
+              <button class="navbar-toggler cross-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler--line"></span>
+                  <span class="navbar-toggler--line"></span>
+                  <span class="navbar-toggler--line"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                  <li class="nav-item dropdown">
+                      <a 
+                          id="navbarDropdownServices" 
+                          class="nav-link dropdown-toggle" 
+                          role="button" 
+                          href="#" 
+                          data-bs-toggle="dropdown" 
+                          aria-expanded="false">
+                          Services
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                          <li>
+                              <a class="dropdown-item" href="#">TeleMedicine</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">TeleHealth/TeleTherapy</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">TMS Therapy</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a 
+                          class="nav-link" 
+                          role="button" 
+                          href="#" 
+                          aria-expanded="false">
+                          Our Team
+                      </a>
+                      <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownTeam">
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link1</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link2</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link3</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link4</a>
+                          </li>
+                      </ul> -->
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Patient Forms</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Patient Portal</a>
+                      </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a 
+                          id="navbarDropdownAbout" 
+                          class="nav-link dropdown-toggle" 
+                          role="button" 
+                          href="#" 
+                          data-bs-toggle="dropdown" 
+                          aria-expanded="false">
+                          About Us
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link1</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="#">Sub-link2</a>
+                          </li>
+                      </ul>
+                  </li>
+                  </ul>
+              </div>
+              </div>
+          </nav>
+      </header>
+      <div class="row main-content">
+        <div class="row">
+          <div class="col-3">
+            <div
+              class="nav flex-column nav-tabs text-center"
+              id="v-tabs-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link active"
+                id="v-tabs-home-tab"
+                data-bs-toggle="tab"
+                href="#v-tabs-home"
+                role="tab"
+                aria-controls="v-tabs-home"
+                aria-selected="true"
+                >Home</a
+              >
+              <a
+                class="nav-link"
+                id="v-tabs-profile-tab"
+                data-bs-toggle="tab"
+                href="#v-tabs-profile"
+                role="tab"
+                aria-controls="v-tabs-profile"
+                aria-selected="false"
+                >Profile</a
+              >
+              <a
+                class="nav-link"
+                id="v-tabs-messages-tab"
+                data-bs-toggle="tab"
+                href="#v-tabs-messages"
+                role="tab"
+                aria-controls="v-tabs-messages"
+                aria-selected="false"
+                >Messages</a
+              >
+            </div>
+          </div>
+        
+          <div class="col-9">
+            <div class="tab-content" id="v-tabs-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-tabs-home"
+                role="tabpanel"
+                aria-labelledby="v-tabs-home-tab"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                commodi culpa est sed ad amet.
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-tabs-profile"
+                role="tabpanel"
+                aria-labelledby="v-tabs-profile-tab"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                commodi culpa est sed ad amet.
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-tabs-messages"
+                role="tabpanel"
+                aria-labelledby="v-tabs-messages-tab"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                commodi culpa est sed ad amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer row">
+                  <div class="col-md-6 footer-about">
+                      <h5>About Us</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lectus eu nulla consequat, ac mattis dolor sodales.</p>
+                  </div>
+                  <div class="col-md-3">
+                      <h5>Quick Links</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Our Team</a></li>
+                          <li><a href="#">Patient Forms</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 footer-contact">
+                      <h5>Contact</h5>
+                      <ul class="list-unstyled">
+                          <li><i class="fas fa-map-marker-alt"></i> Raleigh: 4041 Ed Drive Suite 108 Raleigh, NC 27612</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Clayton: 501 Gateway Drive Suite 101, Clayton NC 27520</li>
+                          <li><i class="fas fa-phone"></i> Main Line: (919) 783-8377</li>
+                          <li><i class="fas fa-phone"></i> New Patients: (919) 324-3383</li>
+                          <li><i class="fas fa-phone"></i> Fax: (919) 324-3404</li>
+                          <li><i class="fas fa-phone"></i> Follow Up Appointments: (919) 324-3385</li>
+                          <li><i class="fas fa-phone"></i> Prescription Refills: (919) 324-3382</li>
+                          <li><i class="fas fa-phone"></i> Emergency Line: (919) 869-6779</li>
+                          <li><i class="fas fa-envelope"></i> info@example.com</li>
+                      </ul>
+                  </div>
+              <hr>
+              <p class="text-center">© 2023 Adolescent, Child and Adult Psychiatry | maroofpsychiatry.com | All rights reserved.</p>
+              <p class="text-center"><a href="#" class="redhusky-link">built by Red Husky Ventures, LLC</a></p>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade contact-form" id="modalForm" tabindex="-1" aria-labelledby="modalFormLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header text-center">
+                      <h4 class="modal-title w-100" id="modalFormLabel">Get In Touch</h4>
+                      <a type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">x</a>
+                  </div>
+                  <div class="modal-body">
+                      <!-- Your form -->
+                      <form id="contactForm">
+                          <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="firstName" required>
+                              <label for="firstName" class="form-label">First Name</label>
+                          </div>
+                          <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="lastName" required>
+                              <label for="lastName" class="form-label">Last Name</label>
+                          </div>
+                          <div class="form-group mb-4">
+                              <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                              <label for="phone" class="form-label">Phone Number</label>
+                          </div>
+                          <div class="form-group mb-4">
+                              <input type="email" class="form-control" id="email" required>
+                              <label for="email" class="form-label">Email address</label>
+                          </div>
+                          <div class="form-group--message mb-4">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea class="form-control" id="message" rows="3"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="submit" class="btn btn-primary contact-form--submit">Submit</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Scripts -->
+    <script src="./scripts/main.js"></script>
+  </body>
+  <!-- lazyload script -->
+  <script>
+    // Animate on Scroll library initialization:
+    AOS.init({})
+
+      $(function(){
+          $('.lazyload').each(function(){
+              if ($(this).attr('data-src') != undefined) {
+                  $(this).attr('src', $(this).attr('data-src'));
+              } else if ($(this).attr('data-bg') != undefined) {
+                  $(this).css({'background-image':`url(${($(this)).attr
+                  ('data-bg')})`});
+              }
+          });
+      });
+  </script>
+</html>    
